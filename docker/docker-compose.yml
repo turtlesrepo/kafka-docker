@@ -22,8 +22,8 @@ services:
   postgres:
     build: postgres
     environment:
-      POSTGRES_PASSWORD: dbpass
-      POSTGRES_USER: dbuser
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
   order:
     build: ../microservice-kafka/microservice-kafka-order
     links:
